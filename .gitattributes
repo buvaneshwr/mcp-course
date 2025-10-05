@@ -1,0 +1,15 @@
+# Encrypt a specific file
+config/secrets.json filter=git-crypt diff=git-crypt
+
+# Encrypt all files with a .key extension
+*.key filter=git-crypt diff=git-crypt
+
+# Encrypt an entire directory
+api_credentials/** filter=git-crypt diff=git-crypt
+
+# Encrypt all files with name .file
+*.file filter=git-crypt diff=git-crypt
+
+# Encrypt all files with name .env
+*.env filter=git-crypt diff=git-crypt
+
